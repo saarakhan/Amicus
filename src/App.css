@@ -1,5 +1,39 @@
-@import "tailwindcss";
-
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Nata Sans", sans-serif;
+    background-color: #f5f4f08e;
+}
+
+.community {
+  background-color: var(--color-community-bg);
+  color: var(--color-community-text);
+}
+
+.education {
+  background-color: var(--color-education-bg);
+  color: var(--color-education-text);
+}
+
+.charity {
+  background-color: var(--color-charity-bg);
+  color: var(--color-charity-text);
+}
+
+.volunteering {
+  background-color: var(--color-volunteering-bg);
+  color: var(--color-volunteering-text);
+}
+
+.wish {
+  background-color: var(--color-wish-bg);
+  color: var(--color-wish-text);
+}
+
+.help-needed {
+  background-color: var(--color-help-needed-bg);
+  color: var(--color-help-needed-text);
+}
+
+.health {
+  background-color: var(--color-health-bg);
+  color: var(--color-health-text);
 }

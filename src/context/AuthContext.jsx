@@ -12,6 +12,8 @@ export const UseAuth = () => useContext(AuthContext);
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     try {
       const storedUser = localStorage.getItem("user");
@@ -21,6 +23,8 @@ export const AuthProvider = ({ children }) => {
     } catch {
       localStorage.removeItem("user");
       setUser(null);
+    } finally {
+      setLoading(false);
     }
   }, []);
 
@@ -62,6 +66,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const isAuthenticated = user?.token ? true : false;
+
   const signup = async newUser => {
     try {
       // hash the password
@@ -79,5 +84,5 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  return <AuthContext.Provider value={{ user, login, signup, logout, isAuthenticated }}>{children}</AuthContext.Provider>;
+  return <AuthContext.Provider value={{ user, login, signup, logout, isAuthenticated }}> {loading ? <div>Loading...</div> : children}</AuthContext.Provider>;
 };

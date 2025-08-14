@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+
+@theme {
+    --color-primary: #302f2d;
+    --font-Mozilla: "Mozilla Headline", sans-serif;
+    --color-community-bg: #E6F4EA;
+    --color-community-text: #1B5E20;
+
+    --color-education-bg: #F5F5F5;
+    --color-education-text: #212121;
+
+    --color-charity-bg: #FDECEA;
+    --color-charity-text: #B71C1C;
+
+    --color-volunteering-bg: #FFF8E1;
+    --color-volunteering-text: #F57F17;
+
+    --color-wish-bg: #FCE4EC;
+    --color-wish-text: #880E4F;
+
+    --color-help-needed-bg: #FFF3E0;
+    --color-help-needed-text: #E65100;
+
+    --color-health-bg: #E8F5E9;
+    --color-health-text: #1B5E20;
+
+}
