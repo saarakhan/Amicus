@@ -246,7 +246,7 @@ export const postData = [
         avatar: "https://randomuser.me/api/portraits/men/36.jpg",
         tag: "Charity",
         description: "Fundraising to provide clean drinking water in rural areas.",
-        image: "https://picsum.photos/600/400?random=13",
+        image: "https://picsum.photos/600/400?random=13",   
         likes: 65,
         replies: 12,
         threadReplies: [
